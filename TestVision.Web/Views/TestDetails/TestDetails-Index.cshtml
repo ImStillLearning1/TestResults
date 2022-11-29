@@ -1,0 +1,10 @@
+﻿@model IEnumerable<TestVision.Web.Models.TestDetailsDto>
+
+<ul>
+	@foreach (var item in Model)
+	{
+		<li>@item.CreatedDate</li>
+		<li>@item.SerialNumber</li>
+		<li>@item.TestResult</li>
+	}
+</ul>
